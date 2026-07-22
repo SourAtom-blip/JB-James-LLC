@@ -31,10 +31,9 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
         <a href="#home" className="flex items-center group">
           <img
-            src="/images/logo.jpeg"
+            src="/images/logo.png"
             alt="JB James Construction, LLC"
-            className="h-14 w-auto md:h-16 scale-125 transition-transform group-hover:scale-[1.35]"
-            style={{ clipPath: "polygon(50% 2%, 98% 50%, 50% 98%, 2% 50%)" }}
+            className="h-14 w-auto md:h-16 transition-transform group-hover:scale-105"
           />
         </a>
 
