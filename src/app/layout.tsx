@@ -45,6 +45,7 @@ export default function RootLayout({
         />
         <link rel="prefetch" as="video" href="/videos/ground-paving-ops.webm" />
         <link rel="prefetch" as="video" href="/videos/crew-onsite.webm" />
+        <link rel="prefetch" as="video" href="/videos/portfolio-construction.webm" />
       </head>
       <body className="bg-black text-white antialiased">{children}</body>
     </html>
