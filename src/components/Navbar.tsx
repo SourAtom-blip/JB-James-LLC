@@ -33,7 +33,8 @@ export default function Navbar() {
           <img
             src="/images/logo.jpeg"
             alt="JB James Construction, LLC"
-            className="h-12 w-auto md:h-14 transition-transform group-hover:scale-105"
+            className="h-14 w-auto md:h-16 scale-125 transition-transform group-hover:scale-[1.35]"
+            style={{ clipPath: "polygon(50% 2%, 98% 50%, 50% 98%, 2% 50%)" }}
           />
         </a>
 
