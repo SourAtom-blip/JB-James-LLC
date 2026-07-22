@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: "30+", label: "Years in Heavy Civil" },
+  { value: "20+", label: "Years in Heavy Civil" },
   { value: "250M+", label: "In Delivered Infrastructure" },
   { value: "120+", label: "Bridges & Structures Built" },
   { value: "0", label: "Compromise on Safety" },
