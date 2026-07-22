@@ -20,6 +20,7 @@ export default function ScrollVideo({
 }: ScrollVideoProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(eager);
+  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     if (eager) return;
@@ -44,27 +45,28 @@ export default function ScrollVideo({
       ref={containerRef}
       className={`relative w-full min-h-screen overflow-hidden bg-black ${className}`}
     >
-      {shouldLoad ? (
+      {poster && (
+        <img
+          src={poster}
+          alt=""
+          loading={eager ? "eager" : "lazy"}
+          decoding="async"
+          className="scroll-video-canvas object-cover"
+        />
+      )}
+      {shouldLoad && (
         <video
-          className="scroll-video-canvas"
+          className={`scroll-video-canvas object-cover transition-opacity duration-500 ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
           src={src}
-          poster={poster}
           muted
           autoPlay
           loop
           playsInline
           preload="auto"
+          onPlaying={() => setVideoReady(true)}
         />
-      ) : (
-        poster && (
-          <img
-            src={poster}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            className="scroll-video-canvas object-cover"
-          />
-        )
       )}
       <div className="absolute inset-0 bg-black/40" />
       <div
