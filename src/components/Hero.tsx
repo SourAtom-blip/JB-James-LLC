@@ -23,6 +23,7 @@ export default function Hero() {
       <ScrollVideo
         src="/videos/hero-bridge-flyover.mp4"
         poster="/images/hero-poster.jpg"
+        eager
       >
         <div
           ref={textRef}
