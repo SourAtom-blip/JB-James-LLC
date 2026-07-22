@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative">
       <ScrollVideo
-        src={cldVideo("hero-bridge-flyover_fwxjyr")}
+        src={cldVideo("0722_omvtbk")}
         poster="/images/hero-poster.jpg"
         eager
       >
