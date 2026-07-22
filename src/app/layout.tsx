@@ -41,6 +41,28 @@ export default function RootLayout({
           as="video"
           href="/videos/hero-bridge-flyover.mp4"
           type="video/mp4"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="video"
+          href="/videos/ground-paving-ops.mp4"
+          type="video/mp4"
+          fetchPriority="low"
+        />
+        <link
+          rel="preload"
+          as="video"
+          href="/videos/portfolio-construction.mp4"
+          type="video/mp4"
+          fetchPriority="low"
+        />
+        <link
+          rel="preload"
+          as="video"
+          href="/videos/crew-onsite.mp4"
+          type="video/mp4"
+          fetchPriority="low"
         />
       </head>
       <body className="bg-black text-white antialiased">{children}</body>
