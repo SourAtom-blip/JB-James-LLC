@@ -35,6 +35,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
+      <head>
+        <link
+          rel="preload"
+          as="video"
+          href="/videos/hero-bridge-flyover.mp4"
+          type="video/mp4"
+        />
+      </head>
       <body className="bg-black text-white antialiased">{children}</body>
     </html>
   );

@@ -33,7 +33,7 @@ export default function ScrollVideo({
           observer.disconnect();
         }
       },
-      { rootMargin: "600px 0px" }
+      { rootMargin: "150px 0px" }
     );
     observer.observe(el);
     return () => observer.disconnect();
