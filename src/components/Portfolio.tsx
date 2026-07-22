@@ -114,7 +114,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="bg-black">
       <ScrollVideo
-        src="/videos/portfolio-construction.mp4"
+        src="/videos/portfolio-construction"
         poster="/images/portfolio-poster.jpg"
       >
         <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-32 text-center">

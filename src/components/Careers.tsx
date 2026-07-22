@@ -28,7 +28,7 @@ export default function Careers() {
   return (
     <section id="careers" className="relative">
       <ScrollVideo
-        src="/videos/crew-onsite.mp4"
+        src="/videos/crew-onsite"
         poster="/images/careers-poster.jpg"
       >
         <div

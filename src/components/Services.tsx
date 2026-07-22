@@ -66,7 +66,7 @@ export default function Services() {
   return (
     <section id="services" className="relative bg-black">
       <ScrollVideo
-        src="/videos/ground-paving-ops.mp4"
+        src="/videos/ground-paving-ops"
         poster="/images/paving-poster.jpg"
       >
         <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-32 text-center">

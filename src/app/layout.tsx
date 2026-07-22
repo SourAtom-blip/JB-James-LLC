@@ -43,6 +43,8 @@ export default function RootLayout({
           type="video/mp4"
           fetchPriority="high"
         />
+        <link rel="prefetch" as="video" href="/videos/ground-paving-ops.webm" />
+        <link rel="prefetch" as="video" href="/videos/crew-onsite.webm" />
       </head>
       <body className="bg-black text-white antialiased">{children}</body>
     </html>

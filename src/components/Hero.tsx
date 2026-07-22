@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative">
       <ScrollVideo
-        src="/videos/hero-bridge-flyover.mp4"
+        src="/videos/hero-bridge-flyover"
         poster="/images/hero-poster.jpg"
         eager
       >
