@@ -31,7 +31,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
         <a href="#home" className="flex items-center group">
           <img
-            src="/images/logo.png"
+            src="/images/logo-v2.png"
             alt="JB James Construction, LLC"
             className="h-14 w-auto md:h-16 transition-transform group-hover:scale-105"
           />
