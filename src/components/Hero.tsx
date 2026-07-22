@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollVideo from "./ScrollVideo";
+import { cldVideo } from "@/lib/cloudinary";
 
 export default function Hero() {
   const textRef = useRef<HTMLDivElement>(null);
@@ -21,7 +22,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative">
       <ScrollVideo
-        src="/videos/hero-bridge-flyover"
+        src={cldVideo("hero-bridge-flyover_fwxjyr")}
         poster="/images/hero-poster.jpg"
         eager
       >

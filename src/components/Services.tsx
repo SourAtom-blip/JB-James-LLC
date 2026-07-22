@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollVideo from "./ScrollVideo";
+import { cldVideo } from "@/lib/cloudinary";
 
 if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +67,7 @@ export default function Services() {
   return (
     <section id="services" className="relative bg-black">
       <ScrollVideo
-        src="/videos/ground-paving-ops"
+        src={cldVideo("ground-paving-ops_ayrmjb")}
         poster="/images/paving-poster.jpg"
       >
         <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-32 text-center">

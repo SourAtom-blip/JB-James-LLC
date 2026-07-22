@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollVideo from "./ScrollVideo";
+import { cldVideo } from "@/lib/cloudinary";
 
 const ROLES = [
   "Heavy Equipment Operators",
@@ -28,7 +29,7 @@ export default function Careers() {
   return (
     <section id="careers" className="relative">
       <ScrollVideo
-        src="/videos/crew-onsite"
+        src={cldVideo("crew-onsite_pu28mk")}
         poster="/images/careers-poster.jpg"
       >
         <div

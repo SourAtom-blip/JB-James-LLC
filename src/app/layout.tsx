@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import { cldVideo } from "@/lib/cloudinary";
 
 const sans = Inter({
   subsets: ["latin"],
@@ -39,13 +40,21 @@ export default function RootLayout({
         <link
           rel="preload"
           as="video"
-          href="/videos/hero-bridge-flyover.mp4"
+          href={cldVideo("hero-bridge-flyover_fwxjyr")}
           type="video/mp4"
           fetchPriority="high"
         />
-        <link rel="prefetch" as="video" href="/videos/ground-paving-ops.webm" />
-        <link rel="prefetch" as="video" href="/videos/crew-onsite.webm" />
-        <link rel="prefetch" as="video" href="/videos/portfolio-construction.webm" />
+        <link
+          rel="prefetch"
+          as="video"
+          href={cldVideo("ground-paving-ops_ayrmjb")}
+        />
+        <link rel="prefetch" as="video" href={cldVideo("crew-onsite_pu28mk")} />
+        <link
+          rel="prefetch"
+          as="video"
+          href={cldVideo("portfolio-construction_obql4z")}
+        />
       </head>
       <body className="bg-black text-white antialiased">{children}</body>
     </html>

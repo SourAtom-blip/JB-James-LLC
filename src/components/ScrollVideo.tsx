@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 
 type ScrollVideoProps = {
-  /** base path without extension, e.g. "/videos/hero-bridge-flyover" */
   src: string;
   poster?: string;
   className?: string;
@@ -60,16 +59,14 @@ export default function ScrollVideo({
           className={`scroll-video-canvas object-cover transition-opacity duration-500 ${
             videoReady ? "opacity-100" : "opacity-0"
           }`}
+          src={src}
           muted
           autoPlay
           loop
           playsInline
           preload="auto"
           onPlaying={() => setVideoReady(true)}
-        >
-          <source src={`${src}.webm`} type="video/webm" />
-          <source src={`${src}.mp4`} type="video/mp4" />
-        </video>
+        />
       )}
       <div className="absolute inset-0 bg-black/40" />
       <div
