@@ -60,6 +60,8 @@ export default function ScrollVideo({
           <img
             src={poster}
             alt=""
+            loading="lazy"
+            decoding="async"
             className="scroll-video-canvas object-cover"
           />
         )

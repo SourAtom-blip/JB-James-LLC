@@ -137,9 +137,12 @@ export default function Portfolio() {
               onClick={() => setActiveProject(p)}
               className="portfolio-card group relative aspect-[4/5] overflow-hidden rounded-sm border hairline text-left"
             >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-luxury group-hover:scale-110"
-                style={{ backgroundImage: `url(${p.image})` }}
+              <img
+                src={p.image}
+                alt={p.name}
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-luxury group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-end p-6">
