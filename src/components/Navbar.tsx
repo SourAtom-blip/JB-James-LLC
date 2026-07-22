@@ -33,7 +33,7 @@ export default function Navbar() {
           <img
             src="/images/logo-v3.png"
             alt="JB James Construction, LLC"
-            className="h-14 w-auto md:h-16 transition-transform group-hover:scale-105"
+            className="h-20 w-auto md:h-24 transition-transform group-hover:scale-105"
           />
         </a>
 
