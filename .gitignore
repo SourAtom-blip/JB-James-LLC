@@ -23,3 +23,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local video backups (served via Cloudinary, not needed in repo)
+/public/videos/*.mp4
+/public/videos/*.webm
