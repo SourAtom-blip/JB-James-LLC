@@ -29,13 +29,12 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
-        <a href="#home" className="flex flex-col leading-none group">
-          <span className="font-display text-xl md:text-2xl tracking-widest2 text-white group-hover:text-gold transition-colors">
-            JB JAMES
-          </span>
-          <span className="text-[10px] md:text-xs tracking-[0.35em] text-slate-light">
-            CONSTRUCTION, LLC
-          </span>
+        <a href="#home" className="flex items-center group">
+          <img
+            src="/images/logo.png"
+            alt="JB James Construction, LLC"
+            className="h-12 w-auto md:h-14 transition-transform group-hover:scale-105"
+          />
         </a>
 
         <ul className="hidden lg:flex items-center gap-8">
