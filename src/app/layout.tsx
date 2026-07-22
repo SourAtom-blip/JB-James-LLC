@@ -50,11 +50,7 @@ export default function RootLayout({
           href={cldVideo("ground-paving-ops_ayrmjb")}
         />
         <link rel="prefetch" as="video" href={cldVideo("crew-onsite_pu28mk")} />
-        <link
-          rel="prefetch"
-          as="video"
-          href={cldVideo("portfolio-construction_obql4z")}
-        />
+        <link rel="prefetch" as="video" href={cldVideo("0722_1_prufhi")} />
       </head>
       <body className="bg-black text-white antialiased">{children}</body>
     </html>
