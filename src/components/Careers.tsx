@@ -44,23 +44,24 @@ export default function Careers() {
             <br />
             <span className="text-gold">Skill, Safety &amp; Grit</span>
           </h2>
-          <div className="mt-6 max-w-xl rounded-sm bg-black/50 backdrop-blur-sm px-6 py-6">
-            <p className="text-white/90">
-              We hire operators, craftsmen, and engineers who take pride in
-              work that outlasts them. Competitive pay, full benefits, and a
-              real path forward.
-            </p>
+          <p
+            className="mt-6 max-w-xl text-white/90"
+            style={{ textShadow: "0 2px 10px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9)" }}
+          >
+            We hire operators, craftsmen, and engineers who take pride in
+            work that outlasts them. Competitive pay, full benefits, and a
+            real path forward.
+          </p>
 
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              {ROLES.map((r) => (
-                <span
-                  key={r}
-                  className="rounded-full border border-white/30 bg-black/40 px-4 py-2 text-xs text-white tracking-wide"
-                >
-                  {r}
-                </span>
-              ))}
-            </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-3 max-w-2xl">
+            {ROLES.map((r) => (
+              <span
+                key={r}
+                className="rounded-full border border-white/30 bg-black/45 px-4 py-2 text-xs text-white tracking-wide backdrop-blur-sm"
+              >
+                {r}
+              </span>
+            ))}
           </div>
 
           <button
